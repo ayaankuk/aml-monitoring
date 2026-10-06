@@ -6,9 +6,7 @@ This project explores an important challenge in anti-money laundering (AML): det
 
 ## Project Overview
 
-The workflow covers data preparation, model training, model comparison, and an alert review dashboard.
-
-The goal is to evaluate both predictive performance and the practical usefulness of the alerts generated.
+I built an AML transaction-monitoring prototype that prioritizes transactions for investigation. I engineered features from account history, compared logistic regression and random forest using a time-based split, and evaluated detection against false alerts and review capacity. I then built a dashboard so users could explore how much labelled laundering the model catches at different investigation budgets.
 
 ## Workflow
 
