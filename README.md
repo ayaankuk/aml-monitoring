@@ -24,7 +24,7 @@ The goal is to evaluate both predictive performance and the practical usefulness
    - Split the data into training and validation sets.
 
 3. **Train and compare models**
-   - Train [model names].
+   - Train Logistic Regression and Random Forest.
    - Compare their ability to detect laundering transactions.
    - Examine the trade-off between missed cases and false alerts.
 
@@ -39,10 +39,9 @@ The goal is to evaluate both predictive performance and the practical usefulness
 
 ## Dataset
 
-- **Source:** [Kaggle dataset name and link]
-- **Target:** [target column]
-- **Label definitions:** [explain the target values]
-- **Dataset type:** [synthetic or real-world]
+- **Source:** HI-Small_Trans.csv --> https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml/data?select=HI-Small_Trans.csv
+- **Target:** is_laundering
+- **Dataset type:** synthetic
 
 Raw data is excluded from this repository. Download it from the original source and follow its licensing terms.
 
@@ -60,17 +59,6 @@ The comparison focuses on:
 | Average precision | Performance across precision-recall thresholds |
 | Alert volume | The number of transactions sent for review |
 
-### Validation Results
-
-| Model | Precision | Recall | F1 Score | Average Precision |
-|-------|-----------|--------|----------|-------------------|
-| [Model 1] | — | — | — | — |
-| [Model 2] | — | — | — | — |
-
-**Selected model:** [model name]  
-**Alert threshold:** [threshold]
-
-[Explain the main finding and why you selected this model and threshold.]
 
 ## Running the Project
 
