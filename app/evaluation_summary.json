@@ -1,0 +1,81 @@
+{
+  "model": "Random Forest",
+  "review_fraction": 0.01,
+  "selection_metric": "Validation recall at the fixed 1% review budget",
+  "tie_breaker": "Ascending transaction_id (notebook row order)",
+  "train_cutoff": "2022-09-07 14:55:00",
+  "test_cutoff": "2022-09-09 03:16:00",
+  "versions": {
+    "python": "3.12.5",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "validation_models": [
+    {
+      "Model": "Logistic Regression",
+      "Transactions": 761590,
+      "Labelled Laundering": 760,
+      "Prevalence": 0.0009979122625034468,
+      "Transactions Reviewed": 7615,
+      "Laundering Caught": 16,
+      "Laundering Missed": 744,
+      "False Alerts": 7599,
+      "Precision at Budget": 0.002101116217990808,
+      "Recall at Budget": 0.021052631578947368,
+      "Lift over Random": 2.1055119742889725,
+      "Average Precision": 0.00676625486854165
+    },
+    {
+      "Model": "Random Forest",
+      "Transactions": 761590,
+      "Labelled Laundering": 760,
+      "Prevalence": 0.0009979122625034468,
+      "Transactions Reviewed": 7615,
+      "Laundering Caught": 384,
+      "Laundering Missed": 376,
+      "False Alerts": 7231,
+      "Precision at Budget": 0.05042678923177938,
+      "Recall at Budget": 0.5052631578947369,
+      "Lift over Random": 50.53228738293534,
+      "Average Precision": 0.09253899038914336
+    }
+  ],
+  "splits": [
+    {
+      "Split": "Validation",
+      "Model": "Random Forest",
+      "Transactions": 761590,
+      "Labelled Laundering": 760,
+      "Prevalence": 0.0009979122625034468,
+      "Transactions Reviewed": 7615,
+      "Laundering Caught": 384,
+      "Laundering Missed": 376,
+      "False Alerts": 7231,
+      "Precision at Budget": 0.05042678923177938,
+      "Recall at Budget": 0.5052631578947369,
+      "Lift over Random": 50.53228738293534,
+      "Average Precision": 0.09253899038914336,
+      "Start": "2022-09-07 14:55:00",
+      "End": "2022-09-09 03:15:00"
+    },
+    {
+      "Split": "Test",
+      "Model": "Random Forest",
+      "Transactions": 762099,
+      "Labelled Laundering": 1561,
+      "Prevalence": 0.0020482903139880776,
+      "Transactions Reviewed": 7620,
+      "Laundering Caught": 812,
+      "Laundering Missed": 749,
+      "False Alerts": 6808,
+      "Precision at Budget": 0.10656167979002625,
+      "Recall at Budget": 0.5201793721973094,
+      "Lift over Random": 52.02469545566894,
+      "Average Precision": 0.23139044897234015,
+      "Start": "2022-09-09 03:16:00",
+      "End": "2022-09-18 16:18:00"
+    }
+  ]
+}

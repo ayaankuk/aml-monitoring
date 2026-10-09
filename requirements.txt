@@ -1,0 +1,9 @@
+# Tested with Python 3.12.5. Install into a virtual environment.
+pandas==3.0.6
+numpy==2.5.3
+scikit-learn==1.9.1
+matplotlib==3.11.2
+streamlit==1.65.0
+jupyterlab==4.6.4
+nbconvert==7.17.1
+ipykernel==7.4.0

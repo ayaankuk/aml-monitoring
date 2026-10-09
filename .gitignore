@@ -2,3 +2,7 @@
 HI-Small_Trans.csv
 
 app/validation_alerts.csv
+app/test_alerts.csv
+.venv/
+__pycache__/
+.ipynb_checkpoints/
